@@ -1,0 +1,18 @@
+4/22/2014
+
+ ******** Octree.cpp ********
+ 
+ Fix child selection code - Handle equal coord cases
+ Implement destructor
+ Handle switch from leaf to central node ( Move dataPoint, solve conflicts with colliding points)
+
+
+ ******** Point.h/.cpp ********
+
+ Change coord types to doubles to handle fractional coords
+
+
+
+ ******** GENERAL ********
+ 
+ Possibly switch from NULL to nullptr?
