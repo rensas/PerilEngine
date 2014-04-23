@@ -52,5 +52,10 @@ int main(int argc, char* argv[]) {
   std::cout<<"Number of system processors: "<<numProc<<"\n";
   */
 
+  Point e(0,0,0);
+
+  short test = o->whichChild(e, d);
+  std::cout<<"Value of test is: "<<test<<"\n";
+
  return 0;
 }

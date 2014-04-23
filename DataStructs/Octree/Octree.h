@@ -31,6 +31,8 @@ class Octree {
   //Octnode *addNodeForPoint(const Point p);  
   //void addObjectToTree(Object o);
 
+  short whichChild(Point parent, Point test);
+
 };
 
 #endif

@@ -7,6 +7,9 @@
  Handle switch from leaf to central node ( Move dataPoint, solve conflicts with colliding points)
 
 
+ 4/23/14
+ Change if/else tree in child selection to whichChild() function. Much faster.
+
  ******** Point.h/.cpp ********
 
  Change coord types to doubles to handle fractional coords

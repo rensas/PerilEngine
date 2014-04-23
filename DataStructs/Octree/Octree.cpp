@@ -17,6 +17,7 @@
 
 
 #include <iostream>
+#include <bitset>
 #include "Octree.h"
 
 
@@ -85,3 +86,14 @@ void Octree::insertNode(Point p, Octnode *n){
   std::cout<<"Child number is: "<<childNumber<<"\n";
 }
 
+short Octree::whichChild(Point parent, Point test){
+
+  short childno = -1;
+  std::bitset<3> bits;
+
+  if(test.getX() > parent.getX()) bits.set(0);
+  if(test.getY() > parent.getY()) bits.set(1);
+  if(test.getZ() > parent.getZ()) bits.set(2);
+  
+  return bits.to_ulong();
+}
